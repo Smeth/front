@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+::-webkit-scrollbar {
+    width: 4px;
+    background-color: #edf2f7;
+    border-radius: 100px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #cbd5e0;
+    border-radius: 100px;
+    border: 2px solid #ff0015;
+}
+
+[id^="reactgooglegraph-"] rect:first-of-type {
+    fill: #1c1c1e!important;
+}
+
+@media (min-width: 768px) {
+    .main-max-w {
+        width: calc(100vw - 250px)
+    }
+}
+
+.angle-down-after::after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  border-width: 8px;
+  border-style: solid;
+  border-color: rgb(152, 166, 173) transparent transparent transparent;
+  transform: translateX(-50%);
+}
+
+.react-calendar__navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.react-calendar__navigation__label__labelText {
+    font-weight: 800;
+    text-transform: capitalize;
+}
+.react-calendar__month-view__weekdays {
+    margin-bottom: 8px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.react-date-picker__wrapper {
+    border: none!important;
+}
+.react-date-picker__wrapper input:focus {
+    outline: none;
+}
